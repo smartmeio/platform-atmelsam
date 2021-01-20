@@ -66,7 +66,7 @@
     "framework-arduino-samd-arancino": {
       "type": "framework",
       "optional": true,
-      "owner": "smartme",
+      "owner": "smartmeio",
       "version": "~1.2.1"
     },
     "framework-arduino-samd-adafruit": {
@@ -285,12 +285,12 @@
     },
     "tool-arancino-ota": {
       "optional": false,
-      "owner": "smartme",
+      "owner": "smartmeio",
       "version": "~1.0.8"
     },
-    "tool-arancino-ota-rest": {
+    "tool-arancino-ota-no-gui": {
       "optional": false,
-      "owner": "smartme",
+      "owner": "smartmeio",
       "version": "~1.0.2"
     },
     "tool-openocd": {

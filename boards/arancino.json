@@ -39,7 +39,7 @@
     "maximum_size": 262144,
     "native_usb": true,
     "offset_address": "0x2000",
-    "protocol": "arancino-ota",
+    "protocol": "arancino-ota-no-gui",
     "protocols": [
       "sam-ba",
       "arancino-ota",

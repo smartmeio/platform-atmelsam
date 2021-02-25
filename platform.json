@@ -66,8 +66,8 @@
     "framework-arduino-samd-arancino": {
       "type": "framework",
       "optional": true,
-      "owner": "smartmeio",
-      "version": "~1.2.1"
+      "owner": "smartme-io",
+      "version": "http://download.smartme.io/artifactory/framework-arduino-samd-arancino/1.2.1/framework-arduino-samd-arancino-1.2.1.tar.gz"
     },
     "framework-arduino-samd-adafruit": {
       "type": "framework",
@@ -285,13 +285,13 @@
     },
     "tool-arancino-ota": {
       "optional": false,
-      "owner": "smartmeio",
-      "version": "~1.0.8"
+      "owner": "smartme-io",
+      "version": "~1.1.0"
     },
     "tool-arancino-ota-no-gui": {
       "optional": false,
-      "owner": "smartmeio",
-      "version": "~1.0.2"
+      "owner": "smartme-io",
+      "version": "http://download.smartme.io/artifactory/tool-arancino-ota-no-gui/1.0.2/tool-arancino-ota-no-gui-1.0.2.tar.gz"
     },
     "tool-openocd": {
       "type": "uploader",

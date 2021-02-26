@@ -40,6 +40,8 @@ class AtmelsamPlatform(PlatformBase):
             upload_tool = "tool-mbctool"
         elif upload_protocol == "arancino-ota":
             upload_tool = "tool-arancino-ota"
+        elif upload_protocol == "arancino-ota-no-gui":
+            upload_tool = "tool-arancino-ota-no-gui"
 
         if upload_tool:
             for name, opts in self.packages.items():

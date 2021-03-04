@@ -281,15 +281,21 @@ elif upload_protocol == "mbctool":
     ]
 
 elif upload_protocol == "arancino-ota":
+    if sys.platform == 'darwin':
+        env.Replace(
+            UPLOADER=join(
+                platform.get_package_dir("tool-arancino-ota") or "", "ArancinoOTA.app/Contents/MacOS/ArancinoOTA"))
+    else:
+        env.Replace(
+            UPLOADER=join(
+                platform.get_package_dir("tool-arancino-ota") or "", "ArancinoOTA"))
     env.Replace(
-        UPLOADER=join(
-            platform.get_package_dir("tool-arancino-ota") or "", "ArancinoOTA"),
-        UPLOADERFLAGS=[
-            "--ip", '"$UPLOAD_PORT"',
-            "--path", "$SOURCES",
-        ],
-        UPLOADCMD='"$UPLOADER" $UPLOADERFLAGS'
-    )
+            UPLOADERFLAGS=[
+                "--ip", '"$UPLOAD_PORT"',
+                "--path", "$SOURCES",
+            ],
+            UPLOADCMD='"$UPLOADER" $UPLOADERFLAGS'
+        )
     upload_actions = [
         env.VerboseAction(env.AutodetectUploadPort,
                           "Looking for upload port..."),

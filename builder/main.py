@@ -283,11 +283,11 @@ elif upload_protocol == "arancino-ota":
     if sys.platform == 'darwin':
         env.Replace(
             UPLOADER=join(
-                platform.get_package_dir("tool-arancino-ota") or "", "ArancinoOTA.app/Contents/MacOS/ArancinoOTA"))
+                platform.get_package_dir("tool-arancino-ota") or "", "bin/ArancinoOTA.app/Contents/MacOS/ArancinoOTA"))
     else:
         env.Replace(
             UPLOADER=join(
-                platform.get_package_dir("tool-arancino-ota") or "", "ArancinoOTA"))
+                platform.get_package_dir("tool-arancino-ota") or "", "bin/ArancinoOTA"))
     env.Replace(
             UPLOADERFLAGS=[
                 "--ip", '"$UPLOAD_PORT"',

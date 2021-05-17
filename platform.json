@@ -67,7 +67,7 @@
       "type": "framework",
       "optional": true,
       "owner": "smartme-io",
-      "version": "http://download.smartme.io/artifactory/framework-arduino-samd-arancino/1.2.1/framework-arduino-samd-arancino-1.2.1.tar.gz"
+      "version": "http://download.smartme.io/artifactory/framework-arduino-samd-arancino/1.2.2/framework-arduino-samd-arancino-1.2.2.tar.gz"
     },
     "framework-arduino-samd-adafruit": {
       "type": "framework",
